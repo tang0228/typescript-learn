@@ -3,7 +3,7 @@
     "target": "es2016", // 配置编译配置代码的版本标准
     "module": "commonjs", // 配置编译使用的模块化标准
     "lib": ["es2016"],
-    "outDir": "./dist",
+    "outDir": "/dist",
     "strictNullChecks": true, // 更加严格类型检查
     "removeComments": true, // 移出编译结果的注释
     "noEmitOnError": true, // 错误时不生成编译结果

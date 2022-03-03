@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon --watch src -e ts --exec ts-node src/class.ts", 
+    "dev": "npx nodemon --watch src -e ts --exec ts-node src/泛型/index.ts", 
     "build": "rd /s /q dist & npx tsc"
   },
   "author": "",
