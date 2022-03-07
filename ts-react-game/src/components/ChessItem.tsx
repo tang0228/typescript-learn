@@ -1,0 +1,28 @@
+import { ChessType } from "../types/enum";
+import "./ChessItem.css";
+
+interface IProps {
+    type: ChessType
+    onClick?: () => void
+}
+
+export default function ChessItem({type, onClick}: IProps) {
+
+    let chess = null;
+
+    if (type === ChessType.red) {
+        chess = <div className="item red"></div>
+    } else if (type === ChessType.black) {
+        chess = <div className="item black"></div>
+    }
+
+    return (
+        <div className="chess" onClick={() => {
+            if(type === ChessType.none && onClick) {
+                onClick();
+            }
+        }}>
+            {chess}
+        </div>
+    )
+}
