@@ -10,6 +10,7 @@
     "noImplicitUseStrict": true, // 设置编译结果不包含“use strict”
     "esModuleInterop": true, // 启用es模块交互，非es模块导出
     "moduleResolution": "node", // 解析模块化的模式
+    "experimentalDecorators": true,
   },
   "include": ["./src"],
 }
